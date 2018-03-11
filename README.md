@@ -26,14 +26,14 @@ There are several commands to access the crawled pages data:
 # Node.js and databases Teamwork assignment <h1>
 
 ## Create a web crawler gathering and aggregating information from atleast two different web sites. <h2>
-**The crawler should support the following operations:** 
+The crawler should support the following operations: 
 *	npm run update
 *	Gathers the information and stores it in MariaDB/MySQL instance
 *	npm run statistics COMMAND:params
 *	At least 3 commands for information aggregation 
 
 ## Example <h2>
-**Web crawler for mobile phones.**
+Web crawler for mobile phones.
 *	Gathers information from technopolis and technomarket
 *	Statistics
 *	Order by price
@@ -45,8 +45,8 @@ There are several commands to access the crawled pages data:
     * i.e. 4G, gorilla glass, etc...
     * npm run statistics search:4g
     * npm run statistics search:gorilla
-**Web crawler for books (goodreads.com)** 
-**Web crawler for movies (imdb)**
+Web crawler for books (goodreads.com) 
+Web crawler for movies (imdb)
 
 ## Technical Requirements <h2>
 *	No UI required, only CLI interface
