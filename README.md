@@ -25,7 +25,7 @@ There are several commands to access the crawled pages data:
 
 # Node.js and databases Teamwork assignment
 
-## Create a web crawler gathering and aggregating information from atleast two different web sites. <h2>
+## Create a web crawler gathering and aggregating information from atleast two different web sites.
 The crawler should support the following operations: 
 *	npm run update
 *	Gathers the information and stores it in MariaDB/MySQL instance
@@ -48,25 +48,25 @@ Web crawler for mobile phones.
 Web crawler for books (goodreads.com) 
 Web crawler for movies (imdb)
 
-## Technical Requirements <h2>
+## Technical Requirements
 *	No UI required, only CLI interface
 *	Parse HTML pages, DO NOT use APIs
 *	Use as much ES2015 as possible
-–	async-await, promises, generators (if possible), etc..
+>	async-await, promises, generators (if possible), etc..
 *	Zero ESLint errors/warnings
-–	Use the .eslintrc file from demos
+>	Use the .eslintrc file from demos
 *	Use MariaDB as data storage
-–	With schemas, fulfulling the good practices
+>	With schemas, fulfulling the good practices
 *	Use Sequelize
 *	Do not use loop constructs
-–	for(var i = 0; …. ), for(const el of …), for(const key in …)
-–	while(….)
+>	for(var i = 0; …. ), for(const el of …), for(const key in …)
+>	while(….)
 
-## Optional Requirements <h2>
+## Optional Requirements
 *	Optimize the gathering of data
-–	i.e. using an async queue, where, at each moment of time, there are exactly 5 downloading queries
+>	i.e. using an async queue, where, at each moment of time, there are exactly 5 downloading queries
 *	Feel free to use any npm package available on the Web
-–	i.e. jQuery for the parsing of the HTML
+>	i.e. jQuery for the parsing of the HTML
 
-## Hints <h2>
+## Hints
 *	Use gpaphs for the gathering
