@@ -23,18 +23,16 @@ There are several commands to access the crawled pages data:
     search params as string
 
 
-# Node.js and databases Teamwork assignment <h1> tag
+# Node.js and databases Teamwork assignment <h1>
 
-## Create a web crawler gathering and aggregating information from atleast two different web sites. <h2> tag
-
+## Create a web crawler gathering and aggregating information from atleast two different web sites. <h2>
 **The crawler should support the following operations:** 
 *	npm run update
 *	Gathers the information and stores it in MariaDB/MySQL instance
 *	npm run statistics COMMAND:params
 *	At least 3 commands for information aggregation 
 
-## Example <h2> tag
-
+## Example <h2>
 **Web crawler for mobile phones.**
 *	Gathers information from technopolis and technomarket
 *	Statistics
@@ -50,8 +48,7 @@ There are several commands to access the crawled pages data:
 **Web crawler for books (goodreads.com)** 
 **Web crawler for movies (imdb)**
 
-## Technical Requirements <h2> tag
-
+## Technical Requirements <h2>
 *	No UI required, only CLI interface
 *	Parse HTML pages, DO NOT use APIs
 *	Use as much ES2015 as possible
@@ -65,13 +62,11 @@ There are several commands to access the crawled pages data:
 –	for(var i = 0; …. ), for(const el of …), for(const key in …)
 –	while(….)
 
-## Optional Requirements <h2> tag
-
+## Optional Requirements <h2>
 *	Optimize the gathering of data
 –	i.e. using an async queue, where, at each moment of time, there are exactly 5 downloading queries
 *	Feel free to use any npm package available on the Web
 –	i.e. jQuery for the parsing of the HTML
 
-## Hints <h2> tag
-
+## Hints <h2>
 *	Use gpaphs for the gathering
