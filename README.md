@@ -23,7 +23,7 @@ There are several commands to access the crawled pages data:
     search params as string
 
 
-# Node.js and databases Teamwork assignment <h1>
+# Node.js and databases Teamwork assignment
 
 ## Create a web crawler gathering and aggregating information from atleast two different web sites. <h2>
 The crawler should support the following operations: 
@@ -32,7 +32,7 @@ The crawler should support the following operations:
 *	npm run statistics COMMAND:params
 *	At least 3 commands for information aggregation 
 
-## Example <h2>
+## Example
 Web crawler for mobile phones.
 *	Gathers information from technopolis and technomarket
 *	Statistics
