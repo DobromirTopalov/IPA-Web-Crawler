@@ -1,0 +1,35 @@
+{
+  "name": "Project-Crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add-migration": "node ./node_modules/sequelize-auto-migrations/bin/makemigration.js",
+    "migrate": "./node_modules/.bin/sequelize db:migrate",
+    "statistics-info": "node ./forEmag/queryData.js showAllWatchesInfo",
+    "statistics-producer": "node ./forEmag/queryData.js filterByProducer",
+    "statistics-name": "node ./forEmag/queryData.js showInfoForName",
+    "statistics-store": "node ./forEmag/queryData.js filterBySource",
+    "statistics-priceRangeOrder": "node ./forEmag/queryData.js filterByPriceRangeSortByType",
+    "statistics-charValue": "node ./forEmag/queryData.js filterByCharacteristicsAndValue",
+    "statistics-priceASC": "node ./forEmag/queryData.js orderByPriceASC",
+    "statistics-priceDESC": "node ./forEmag/queryData.js orderByPriceDESC",
+    "update": "node ./app.js update"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.1",
+    "eslint-config-google": "^0.9.1",
+    "jquery": "^3.3.1",
+    "jsdom": "^11.6.2",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.2",
+    "sequelize": "^4.34.1",
+    "sequelize-auto-migrations": "^1.0.2",
+    "sequelize-cli": "^4.0.0"
+  }
+}
