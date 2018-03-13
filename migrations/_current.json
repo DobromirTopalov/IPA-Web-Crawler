@@ -1,0 +1,126 @@
+{
+    "tables": {
+        "Characteristics": {
+            "tableName": "Characteristics",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "producer": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.STRING"
+                },
+                "price": {
+                    "validate": {
+                        "isDecimal": true
+                    },
+                    "allowNull": false,
+                    "seqType": "Sequelize.FLOAT"
+                },
+                "waranty": {
+                    "validate": {
+                        "len": [
+                            1,
+                            120
+                        ]
+                    },
+                    "allowNull": false,
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "mechanics": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.STRING"
+                },
+                "proof_level": {
+                    "allowNull": true,
+                    "seqType": "Sequelize.STRING"
+                },
+                "clock_face": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.DATE"
+                },
+                "WatchesId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "Watches",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Watches": {
+            "tableName": "Watches",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "name": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.TEXT"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.DATE"
+                },
+                "WebstoreId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "Webstores",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Webstores": {
+            "tableName": "Webstores",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "web_page": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 1
+}
